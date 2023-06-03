@@ -88,6 +88,20 @@ function appendChart(data) {
     .attr("height", height);
 
   svg
+    .append("text")
+    .attr("x", padding - 40)
+    .attr("y", padding - 20)
+    .text("Seconds")
+    .attr("class", "chart-title");
+
+  svg
+    .append("text")
+    .attr("x", width - 40)
+    .attr("y", height - 30)
+    .text("Year")
+    .attr("class", "chart-title");
+
+  svg
     .selectAll("circle")
     .data(data)
     .enter()
