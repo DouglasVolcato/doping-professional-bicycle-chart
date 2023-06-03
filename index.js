@@ -23,7 +23,7 @@ function setToolTip() {
       tooltip.id = "tooltip";
       tooltip.innerHTML = `
           Name: ${name} <br>
-          Doping: ${doping} <br>
+          Doping: ${doping === "" ? "None" : doping} <br>
           Nationality: ${nationality} <br>
           Seconds: ${seconds} <br>
           Year: ${year} <br>
